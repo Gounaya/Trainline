@@ -24,7 +24,6 @@ export default class Header extends React.Component<any, any>{
             <li><Link to="/userpanel">Account</Link></li>
             <li><Link to="/stations">SearchSNCF</Link></li>
             <li><Link to="/login">Login</Link></li>
-            <li><Link to="#" >Logout</Link></li>
           </ul>
         </div>
       );

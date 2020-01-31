@@ -38,7 +38,7 @@ export default class Login extends React.Component<any,any>{
 
   render(){
     if(this.state.isLogged){
-      return (<Redirect to={'/home'}/>);
+      return (<Redirect to={'/stations'}/>);
     }
 
     return ( 

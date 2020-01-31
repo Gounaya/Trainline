@@ -19,27 +19,18 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export default class Home extends React.Component<any, any> {
+export default class Home extends React.Component {
     
-  constructor(props:any){
+  constructor(props){
     super(props);
     this.state={
       redirect: false,
     }
-    this.logout = this.logout.bind(this);
   }
 
-  logout(){
-    sessionStorage.setItem("userData", '');
-    sessionStorage.clear();
-    this.setState({redirect: true})
-  }
+
   
   render(){
-
-    if(this.state.redirect){
-      return (<Redirect to={'/login'}/>)
-    }
 
     if(this.props.isLog){
       return (
@@ -48,9 +39,7 @@ export default class Home extends React.Component<any, any> {
           <div className="row " id="Body">
             <div className="medium-12 columns bodyPart">
               <h2>Home</h2>
-              <a href="#" className="button logout" onClick={this.logout}>Logout</a>
                 <Stations/>
-  
             </div>
           </div>
         </div>

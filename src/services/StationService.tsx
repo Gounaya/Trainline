@@ -9,7 +9,7 @@ export async function StationService(query:any){
         .catch((error:any) => {console.log(error)});
 
     return jsonresponse.records.map((gare:any) => {
-        return gare.fields.gare_ut_libelle
+        return {id:gare.recordid, libelle: gare.fields.gare_alias_libelle_noncontraint}
     })
     
 }
