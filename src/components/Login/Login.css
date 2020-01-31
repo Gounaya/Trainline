@@ -1,0 +1,23 @@
+.block {
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+.column{
+    width: 30%;
+    margin-left: 40%;
+    position: relative;
+}
+
+.board{
+    width: 350px;
+    height: 350px;
+    background-color: whitesmoke;
+    border-radius: 30px;
+}

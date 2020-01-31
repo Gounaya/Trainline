@@ -1,0 +1,24 @@
+.my-card-content {
+    padding: 16px;
+}
+
+.my-card {
+    height: 350px;
+    width: 350px;
+}
+
+.boardback{
+    height: 350px;
+    width: 350px;
+    background-color: whitesmoke;
+    text-align: center;
+    margin-left: 400px;
+}
+
+p{
+    font-weight:bold;
+}
+
+.promo{
+    margin-top: 10px;
+}

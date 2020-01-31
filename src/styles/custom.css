@@ -1,0 +1,17 @@
+
+h1{
+    font-family: "Open Sans", sans-serif;
+}
+
+.primary{
+    background: #6AB8F6 !important;
+}
+
+.secondary{
+    background: #242c43 !important;
+    color: #ffffff !important;
+}
+
+.bodyPart{
+    min-height: 380px;
+}
