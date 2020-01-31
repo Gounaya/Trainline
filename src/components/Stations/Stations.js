@@ -57,7 +57,7 @@ export default function Stations(params){
               onChange={changeInputDeparture}
               id="combo-box-demo"
               options={departureGares}
-              //getOptionLabel={option => option.libelle}
+              getOptionLabel={option => option.libelle}
               style={{ width: 300 }}
               renderInput={params => (
                 <TextField {...params} label="Departure" variant="outlined" fullWidth onChange={onChangeInputDeparture} />
@@ -68,7 +68,7 @@ export default function Stations(params){
               onChange={changeInputArrival}
               id="combo-box-demo"
               options={arrivalGares}
-              //getOptionLabel={option => option.libelle}
+              getOptionLabel={option => option.libelle}
               style={{ width: 300 }}
               renderInput={params => (
                 <TextField {...params} label="Arrival" variant="outlined" fullWidth onChange={onChangeInputArrival} />
